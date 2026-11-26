@@ -39,6 +39,7 @@
     display:inline-flex; align-items:center; gap:5px; transition:color .2s;
   }
   nav a:hover { color:#e01010; }
+  nav a[aria-current="page"] { color:#ff625b; }
   nav svg { width:12px; height:12px; fill:none; stroke:currentColor; stroke-width:2.4; }
   .hero-picture { min-height:0; min-width:0; }
   .hero { display:block; width:100%; height:100%; min-height:0; min-width:0; object-fit:cover; }
@@ -69,11 +70,12 @@
     <a class="logo" href="/"><img src="assets/logo_512.png" alt="Murderdolls" width="640" height="415"></a>
     <nav aria-label="Main">
       <ul>
+        <li><a href="./" aria-current="page">Home</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="#">Tour</a></li>
+        <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Music</a></li>
         <li><a href="#">Video</a></li>
-        <li><a href="#">Shop <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2.5l4 3 4-3M2 6.5l4 3 4-3"/></svg></a></li>
+        <li><a href="https://rebellionrepublic.com/collections/murderdolls" target="_blank" rel="noopener">Shop</a></li>
       </ul>
     </nav>
   </header>
